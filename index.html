@@ -117,28 +117,47 @@
             <div class="col mb-4 text-white">
               <h2>Currently Hearing a Music! <i class="bi bi-music-note-beamed"></i></h2>
               <hr />
+                <style>
+                    .music1, .music2, .music3, .music4 {
+                        background-color: grey;
+                        margin-bottom: 30px;
+                        padding-bottom: 30px;
+                        border-radius: 30px;
+                        border: white solid 5px;
+                    }
+                    #music hr {
+                        margin-bottom: 30px;    
+                    }
+                </style>
                 <div class="songs">
-                    <div class="song1">
+                    <div class="music1">
                         <h2 style="padding-top: 30px">HIVI! - Remaja</h2>
                         <audio controls>
                         <source src="./Bahan/Sound/HIVI-Remaja.mp3">
                         Your browser does not support the audio element.
                     </audio>
                     </div>
-                    <div class="song2">
+                    <div class="music2">
                         <h2 style="padding-top: 30px">Dewa - Risalah Hati</h2>
                         <audio controls>
                         <source src="./Bahan/Sound/Dewa-Risalah_Hati.mp3">
                         Your browser does not support the audio element.
                     </audio>
                     </div>
-                    <div class="song3">
+                    <div class="music3">
                         <h2 style="padding-top: 30px">For Revenge - Serana</h2>
                         <audio controls>
                         <source src="./Bahan/Sound/For_Revenge-Serana.mp3">
                         Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="music4">
+                        <h2 style="padding-top: 30px">One Direction - Story of My Life</h2>
+                        <audio controls>
+                        <source src="./Bahan/Sound/One_Direction-Story_of_My_Life.mp3">
+                        Your browser does not support the audio element.
                     </audio>
-                </div>
+                    </div>
             </div>
             <!-- <div class="skill">
               <span class="d-flex justify-content-evenly mb-5">
@@ -154,6 +173,7 @@
           </div>
         </div>
       </div>
+        </div>
       <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-bottom: -0.5rem">
         <path
           fill="#3628b0"
@@ -177,10 +197,10 @@
               <div class="card">
                 <img src="./Bahan/Projects/rpr1.png" class="card-img-top" alt="First Project" />
                 <div class="card-body">
-                  <h5 class="card-title">OSIS SMASBEST</h5>
-                  <p class="card-text">Member of Osis SMA Al - Azhar Syifa Budi Solo</p>
-                  <p class="card-text"><small class="text-body-secondary">Bidang Agama</small></p>
-                  <a href="https://www.instagram.com/osismasbs_/" class="btn btn-outline-dark stretched-link"> Follow The Account!</a>
+                    <h5 class="card-title">OSIS SMASBEST</h5>
+                    <p class="card-text">Member of Osis SMA Al - Azhar Syifa Budi Solo</p>
+                    <p class="card-text"><small class="text-body-secondary">Bidang Agama</small></p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ig-osis" style="background-color: #ffffff; color: black; border: black solid 1px">Follow the Account</button>
                 </div>
               </div>
             </div>
@@ -191,7 +211,7 @@
                   <h5 class="card-title">Server Manager</h5>
                   <p class="card-text">Pengurus Server Game</p>
                   <p class="card-text"><small class="text-body-secondary">Pembuat dan berpartisipasi dalam pembuatan Private Server dari game Growtopia</small></p>
-                  <a href="https://discord.gg/vdm5NxdDf7" class="btn btn-outline-dark stretched-link">Selengkapnya</a>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dc-kembarps" style="background-color: #ffffff; color: black; border: black solid 1px">Selengkapnya</button>
                 </div>
               </div>
             </div>
@@ -202,7 +222,7 @@
                   <h5 class="card-title">AREX1 Instagram</h5>
                   <p class="card-text">Instagram kelas gw coy</p>
                   <p class="card-text"><small class="text-body-secondary">🥰🥰🥰</small></p>
-                  <a href="https://www.instagram.com/gadingagani/" class="btn btn-outline-dark stretched-link">Follow My Account!</a>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ig-kelas" style="background-color: #ffffff; color: black; border: black solid 1px">Follow the Account</button>
                 </div>
               </div>
             </div>
@@ -407,7 +427,7 @@
         <a href="https://instagram.com/gadingagani">
           <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x m-3" style="color: #ffffff"></i>
         </a>
-        <a href="https://discord.com/">
+        <a href="discord.html">
           <i class="fa bi bi-discord fa-lg white-text mr-md-5 mr-3 fa-2x m-3" style="color: #ffffff"></i>
         </a>
       </div>
@@ -444,5 +464,68 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+    <!-- ASSETS -->
+
+    <!-- IG OSIS -->
+              
+<div class="modal fade" id="ig-osis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">SMASBEST Osis Instagram</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                This will take you to OSIS SMASBEST Instagram Account. Continue?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a href="https://www.instagram.com/osismasbs_/"><button type="button" class="btn btn-primary">Continue</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- KEMBARPS -->
+
+<div class="modal fade" id="dc-kembarps" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Growtopia Private Server</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                This will take you to Growtopia Private Server community. Continue?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a href="https://www.instagram.com/osismasbs_/"><button type="button" class="btn btn-primary">Continue</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- IG KELAS -->
+
+<div class="modal fade" id="ig-kelas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">SMASBEST Osis Instagram</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                This will take you to OSIS SMASBEST Instagram Account. Continue?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a href="https://www.instagram.com/osismasbs_/"><button type="button" class="btn btn-primary">Continue</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+              
   </body>
 </html>

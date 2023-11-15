@@ -130,7 +130,7 @@ hr {
 }
 
 #music {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 #contact h5:hover {
@@ -149,7 +149,7 @@ hr {
   background-color: #000000;
 }
 
-.song1, .song2, .song3 {
+.music1, .music2, .music3, .music4 {
     background-color: grey;
     margin-bottom: 30px;
     padding-bottom: 30px;
